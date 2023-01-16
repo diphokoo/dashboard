@@ -1,0 +1,40 @@
+<head>
+    <link rel="stylesheet" href="/stylesheets/main.css">
+</head>
+<body ng-app="loginPage" ng-controller="loginPageController">
+    <form name="myForm">
+        <div class="loginContainer">
+            <div class="login-container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" ng-model="user.username" class="form-control" required>
+                            <div ng-show="myForm.email.$error.email" class="error">Envalid email</div>
+                            <div ng-show="myForm.email.$error.required &amp;&amp; myForm,email.$touched" class="error">Required</div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" name="pass" ng-model="user.password" class="form-control" required>
+                            <div ng-show="myForm.pass,$error.required &amp;&amp; myForm.pass.$touched" class="error">Required</div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <button ng-click="authenticate()" ng-disabled="myForm.$invalid" class="btn btn-success pull-right">Login</button>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div ng-show="showError" class="alert alert-danger">Wrong credentials!</div>
+                        <div ng-show="showSuccesss" class="alert alert-success">Login Sucessful!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
