@@ -13,5 +13,13 @@ dashboardApp.controller('homeController',function($scope){
     $scope.payment = "Payment Links";
     $scope.send = "Send payments";
     $scope.wire = "Wire";
+    $scope.support = "Support";
+    $scope.hide = "Hide Panel";
+    $scope.profile = "Profile";
+    $scope.settings = "Settings";
+    $scope.logout = "Logout";
+    $scope.english = "EN";
+    $scope.afrikaans = "AFR";
+    $scope.zulu = "ZUL";
 
 });

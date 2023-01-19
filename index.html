@@ -81,9 +81,9 @@
                 </div>
 
                 <div class="actBtn">
-                    <button type="button" class="btn btn-danger supportBtn"> <i class="fa fa-question-circle-o supportIcon"></i> Support</button>
+                    <button type="button" class="btn btn-danger supportBtn"> <i class="fa fa-question-circle-o supportIcon"></i> {{support}}</button>
                     <br>
-                    <button type="button" class="btn btn-outline-dark hidePanel" id="menu-toggle"> <i class="fas fa-angle-left"></i> Hide panel</button>
+                    <button type="button" class="btn btn-outline-dark hidePanel" id="menu-toggle"> <i class="fas fa-angle-left"></i> {{hide}}</button>
                 </div>
             </div>
         </div>
@@ -108,19 +108,19 @@
                                 <i class="fa fa-user-circle-o"></i></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Profile</a></li>
-                                <li><a class="dropdown-item" href="#">Settings</a></li>
-                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                                <li><a class="dropdown-item" href="#">{{profile}}</a></li>
+                                <li><a class="dropdown-item" href="#">{{settings}}</a></li>
+                                <li><a class="dropdown-item" href="#">{{logout}}</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown"
                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            EN
+                            {{english}}
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">AFR</a></li>
-                                <li><a class="dropdown-item" href="#">ZUL</a></li>
+                                <li><a class="dropdown-item" href="#">{{afrikaans}}</a></li>
+                                <li><a class="dropdown-item" href="#">{{zulu}}</a></li>
                             </ul>
                         </li>
                     </ul>
