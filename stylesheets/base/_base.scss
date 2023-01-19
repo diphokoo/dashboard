@@ -1,6 +1,7 @@
 $errorColor:tomato;
 $primary-pink:#ef2c5a;
-
+$primary-gray: #8D8D8D;
+$second-text-color: #000;
 
 .error{
     color: $errorColor;
@@ -16,4 +17,23 @@ span.logo {
 
 span.logo:hover {
     color: $primary-pink;
+}
+
+.list-group-item.active {
+    background-color: transparent !important;
+    color: $primary-pink !important;
+    font-weight: bold !important;
+    border: none !important;
+}
+
+.second-text {
+    color: $second-text-color;
+}
+
+.third-text {
+    color: $primary-gray;
+}
+
+a.list-group-item.list-group-item-action.bg-transparent.third-text.fw-bold {
+    color: $primary-gray;
 }

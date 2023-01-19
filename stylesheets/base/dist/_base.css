@@ -13,3 +13,22 @@ span.logo {
 span.logo:hover {
   color: #ef2c5a;
 }
+
+.list-group-item.active {
+  background-color: transparent !important;
+  color: #ef2c5a !important;
+  font-weight: bold !important;
+  border: none !important;
+}
+
+.second-text {
+  color: #000;
+}
+
+.third-text {
+  color: #8D8D8D;
+}
+
+a.list-group-item.list-group-item-action.bg-transparent.third-text.fw-bold {
+  color: #8D8D8D;
+}
