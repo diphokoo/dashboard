@@ -87,3 +87,18 @@ button.btn.btn-outline-dark.hidePanel {
 a.list-group-item.list-group-item-action.bg-transparent.second-text.fw-bold.ng-binding {
   margin-top: -5px;
 }
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
