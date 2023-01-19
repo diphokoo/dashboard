@@ -12,4 +12,6 @@ dashboardApp.controller('homeController', function ($scope) {
   $scope.accept = "Accept payments";
   $scope.checkout = "Checkout";
   $scope.payment = "Payment Links";
+  $scope.send = "Send payments";
+  $scope.wire = "Wire";
 });
