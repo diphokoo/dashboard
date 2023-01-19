@@ -5,9 +5,38 @@
   padding-top: 4px;
 }
 
+span.logo {
+  margin-right: -7px;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+span.logo:hover {
+  color: #ef2c5a;
+}
+
 .login-container {
   max-width: 400px;
   margin: 60px auto 0;
+}
+
+#wrapper {
+  overflow-x: hidden;
+}
+
+#side-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper {
+  width: 180px;
 }
 
 /*!

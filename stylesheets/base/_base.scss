@@ -1,7 +1,19 @@
 $errorColor:tomato;
+$primary-pink:#ef2c5a;
+
 
 .error{
     color: $errorColor;
     font-size: 12px;
     padding-top: 4px;
+}
+
+span.logo {
+    margin-right: -7px;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+span.logo:hover {
+    color: $primary-pink;
 }
