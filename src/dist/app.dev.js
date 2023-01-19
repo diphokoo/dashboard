@@ -22,4 +22,10 @@ dashboardApp.controller('homeController', function ($scope) {
   $scope.english = "EN";
   $scope.afrikaans = "AFR";
   $scope.zulu = "ZUL";
+  var el = document.getElementById("wrapper");
+  var toggleButton = document.getElementById("menu-toggle");
+
+  toggleButton.onclick = function () {
+    el.classList.toggle("toggled");
+  };
 });
