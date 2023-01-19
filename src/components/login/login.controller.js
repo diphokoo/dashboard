@@ -1,13 +1,15 @@
-var loginPage = angular.module('loginPage',[]);
+var app = angular.module('myApp',[]);
 
-loginPage.controller('loginPageController',function($scope){
-    $scope.user={'username':'','password':''};
+app.controller('myController',function($scope){
+	
+	$scope.user={'username':'','password':''};
 	
 	//----- Users json
 	var validUsers= [ 
-        {'username':'admin@gmail.com','password':'admin@1Password'},
-        {'username':'llew.adamson@tengen.co.za','password':'Password@01'},
-        {'username':'diphokoo@outlook.com','password':'Password@01'}
+		{'username':'chandler@friends.com', 'password':'1234'},
+		{'username':'ross@friends.com', 'password':'1234'},
+		{'username':'joey@friends.com', 'password':'1234'},
+		{'username':'rechal@friends.com', 'password':'1234'}
 	];
 	
 	$scope.showError = false; // set Error flag
@@ -39,14 +41,5 @@ loginPage.controller('loginPageController',function($scope){
 
 
 	}
+
 });
-
-
-
-
-
-
-
-
-
-
