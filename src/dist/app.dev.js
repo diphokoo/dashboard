@@ -9,4 +9,7 @@ dashboardApp.controller('homeController', function ($scope) {
   $scope.analystics = "Analystics";
   $scope.marketing = "Marketing";
   $scope.exchange = "Exchange rates";
+  $scope.accept = "Accept payments";
+  $scope.checkout = "Checkout";
+  $scope.payment = "Payment Links";
 });
